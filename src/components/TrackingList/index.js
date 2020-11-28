@@ -6,6 +6,8 @@ export const TrackingList = () => {
   return (
     <div className='tracking-list'>
       <TrackingItem />
+      <TrackingItem />
+      <TrackingItem />
     </div>
   );
 };

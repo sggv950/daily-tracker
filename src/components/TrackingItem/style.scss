@@ -1,4 +1,9 @@
+.tracking-item-container {
+  margin-bottom: 20px;
+}
+
 .tracking-item {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,5 +11,37 @@
   border: 1px solid #fcfcfc;
   padding: 20px;
   color: #fcfcfc;
-  border-radius: 5px;
+}
+
+.tracking-item-menu {
+  height: 65px;
+  display: flex;
+  background-color: #42b883;
+  justify-content: space-between;
+  transition: height 0.3s linear;
+}
+
+.tracking-item-menu-item {
+  cursor: pointer;
+  border: 1px solid #fcfcfc;
+  border-top: none;
+  width: 100%;
+  color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden-menu {
+  height: 0;
+}
+
+.visible-menu-item {
+  opacity: 1;
+  transition: opacity 0.1s linear 0.2s;
+}
+
+.hidden-menu-item {
+  opacity: 0;
+  transition: opacity;
 }

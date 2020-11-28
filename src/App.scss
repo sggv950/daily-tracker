@@ -16,13 +16,26 @@
 }
 
 .refresh-button {
+  
   cursor: pointer;
-  width: 100%;
   height: 70px;
+  width: 70px;
   background-color: dodgerblue;
   color: #fefefe;
-  border-radius: 5px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
+  outline: none;
+  
+  @media screen and (min-width: 800px){
+    &:hover {
+      background-color: #379bff;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
 }
